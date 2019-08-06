@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Emergency App</string>
+    <string name="menu">menu</string>
+    <string name="girl_safe_desc">By switching on this you can get feature where you can notify your family and friends.You just have to shake 3 times your mobile phone to notify your family and friends</string>
+    <string name="blood_req_desc">You can request for blood donor by searching for the respective blood Group.\n You can be donor by on the switch \n</string>
+    <string name="radio_male">Male</string>
+    <string name="radio_female">Female</string>
+    <string name="radio_other">Other</string>
+    <string-array name="options">
+        <item>Hospital</item>
+        <item>GIRLS SAFE</item>
+        <item>COMMUNITY SIREN</item>
+        <item>BLOOD REQ</item>
+        <item>AMBULANCE</item>
+        <item>ICE BOT</item>
+    </string-array>
+</resources>

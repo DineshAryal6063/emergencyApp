@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFF"
+    tools:context=".activity.BloodReq">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/btnswitch"
+        android:fontFamily="sans-serif"
+        android:text="Be Donor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/btnswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnswitch"
+        android:background="#FFF"
+        android:fontFamily="sans-serif"
+        android:text="@string/blood_req_desc"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/searchforbllod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDes"
+        android:background="#FFF"
+        android:fontFamily="sans-serif"
+        android:text="Request for Blood"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_blood"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/searchforbllod"
+        android:layout_margin="10dp"
+        android:entries="@array/blood_array" />
+
+    <Button
+        android:id="@+id/btn_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_blood"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button_background"
+        android:text="Request"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_request"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="#FFF"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="रक्त दान  जीवन दान"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+</RelativeLayout>

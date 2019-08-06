@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tgn.com.emergencyapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_warning"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_warning"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.AmbulanceSewa"></activity>
+        <activity android:name=".activity.CommunityAlert" />
+        <activity android:name=".activity.BloodReq" />
+        <activity android:name=".activity.GirlSafety" />
+
+        <service
+            android:name=".services.NotificationService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.BloodService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.CommunityService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".activity.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity"></activity>
+    </application>
+
+</manifest>
